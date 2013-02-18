@@ -19,9 +19,7 @@
 
 include_recipe "runit"
 
-gem_package "god" do
-  action :install
-end
+rbenv_gem "god"
 
 directory "/etc/god/conf.d" do
   recursive true
