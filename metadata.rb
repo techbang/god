@@ -12,5 +12,5 @@ recipe "god", "Installs god and starts it as a runit service"
   supports os
 end
 
-depends "runit", "<= 0.16.2"
+depends 'runit', '~> 1.2'
 depends "rbenv"
